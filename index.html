@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Imposter </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Imposter Wortspiel 🎀🐬🪼</h1>
+
+<!-- Raum Auswahl -->
+<div id="roomSelect">
+  <input id="roomNameInput" placeholder="Raumname eingeben" autocomplete="off" />
+  <button id="joinRoomBtn">Raum betreten 🎀</button>
+</div>
+
+<!-- Login -->
+<div id="login" style="display:none;">
+  <input id="email" type="email" placeholder="E-Mail" autocomplete="off" />
+  <input id="password" type="password" placeholder="Passwort" autocomplete="off" />
+  <input id="nickname" placeholder="Dein Nickname" autocomplete="off" />
+  <button id="loginBtn">Spiel beitreten 🪽</button>
+</div>
+
+<!-- Spielbereich -->
+<div id="game" style="display:none;">
+  <p>Hallo <span id="playerName"></span>!</p>
+  <p>Raum: <span id="currentRoomName"></span></p>
+  <p>Deine Rolle: <span id="role"></span></p>
+  <p>Geheimes Wort: <span id="secretWord"></span></p>
+
+  <input id="hintInput" placeholder="Gib deinen Hinweis" autocomplete="off" />
+  <button id="sendHintBtn">Hinweis senden ☁️</button>
+
+  <h3>Hinweise der Mitspieler:</h3>
+  <ul id="hintsList"></ul>
+
+  <button id="startGameBtn" style="display:none;">Spiel starten 🩷</button>
+
+  <hr />
+
+  <h3>Chat</h3>
+  <ul id="chatList" style="max-height:150px;overflow-y:auto;background:#fff8fc; border-radius:10px; padding:10px;"></ul>
+  <input id="chatInput" placeholder="Chat Nachricht..." autocomplete="off" />
+  <button id="sendChatBtn">Senden</button>
+</div>
+
+<!-- Firebase Scripts -->
+<script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

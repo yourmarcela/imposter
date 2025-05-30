@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+  font-family: 'Comfortaa', cursive, sans-serif;
+  background: linear-gradient(135deg, #f7c6d9, #a9d6e5);
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+  color: #40334a;
+  user-select: none;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+}
+
+input, button {
+  font-family: 'Comfortaa', cursive, sans-serif;
+  font-weight: 700;
+  border-radius: 22px;
+  padding: 14px 20px;
+  border: none;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #40334a99;
+}
+
+button {
+  background-color: #fbb1b1;
+  cursor: pointer;
+  color: #40334a;
+  box-shadow: 0 6px 15px rgba(255 160 160 / 0.6);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f794a4;
+}
+
+#startGameBtn {
+  background-color: #8dcffb;
+  box-shadow: 0 6px 15px rgba(100 160 255 / 0.6);
+}
+
+#startGameBtn:hover {
+  background-color: #66b0f5;
+}
+
+#hintsList, #chatList {
+  background: #fff8fc;
+  border-radius: 18px;
+  padding: 15px 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #5e3b77;
+  font-weight: 600;
+}
+
+#hintsList li, #chatList li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
