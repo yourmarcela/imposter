@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Wortspiel</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imposter Wortspiel 🎀</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="roomSelect">
+    <h2>🎀 Raum wählen</h2>
+    <input id="roomNameInput" placeholder="Raumname" />
+    <button id="joinRoomBtn">Beitreten</button>
+  </div>
+
+  <div id="login" style="display: none;">
+    <h2>🐬 Login</h2>
+    <input id="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Passwort" />
+    <input id="nickname" placeholder="Nickname" />
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <div id="game" style="display: none;">
+    <h2>🪽 Willkommen, <span id="playerName"></span></h2>
+    <p>Raum: <span id="currentRoomName"></span></p>
+    <p>Rolle: <strong><span id="role"></span></strong></p>
+    <p>Wort: <strong><span id="secretWord"></span></strong></p>
+
+    <input id="hintInput" placeholder="Hinweis geben..." />
+    <button id="sendHintBtn">Senden</button>
+    <ul id="hintsList"></ul>
+
+    <h3>💬 Chat</h3>
+    <ul id="chatList"></ul>
+    <input id="chatInput" placeholder="Nachricht..." />
+    <button id="sendChatBtn">Senden</button>
+
+    <button id="startGameBtn">🎮 Spiel starten</button>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
